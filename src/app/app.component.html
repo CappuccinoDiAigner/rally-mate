@@ -6,6 +6,7 @@
   <mat-label>Geschwindigkeit</mat-label>
   <input matInput type="number" [(ngModel)]="speed">
 </mat-form-field>
+<!---->
 <span class="current-km">{{currentKm | number:'1.2-2'}}</span>
 <button mat-fab (click)="running ? stop() : start()">
   <mat-icon>{{running ? 'stop' : 'play_arrow'}}</mat-icon>
