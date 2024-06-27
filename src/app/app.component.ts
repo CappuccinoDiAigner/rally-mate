@@ -24,7 +24,7 @@ export class AppComponent {
   private readonly period = 50;
 
   start(): void {
-    if(!this.startKm || !this.speed) {
+    if(!this.startKm === undefined || this.speed === undefined) {
       return;
     }
 
